@@ -5,12 +5,11 @@ phases:
 #       - echo Installing source NPM dependencies...
 #       - npm install
   build:
-#     commands:
-#       - pip install --upgrade pip
-#       - pip install pipenv --user
-#       - pipenv install awscli aws-sam-cli
-#       - pipenv run sam package --s3-bucket b1-front-end-photosearch
+    commands:
+      - pip install --upgrade pip
+      - pip install pipenv --user
+      - pipenv install awscli aws-sam-cli
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+#   base-directory: build
