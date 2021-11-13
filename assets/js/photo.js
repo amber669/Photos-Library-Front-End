@@ -91,23 +91,6 @@ function searchPhotos(searchText) {
         });
 }
 
-
-// function getBase64(file) {
-//   return new Promise((resolve, reject) => {
-//     const reader = new FileReader();
-//     reader.readAsDataURL(file);
-//     // reader.onload = () => resolve(reader.result)
-//     reader.onload = () => {
-//       let encoded = reader.result.replace(/^data:(.*;base64,)?/, '');
-//       if ((encoded.length % 4) > 0) {
-//         encoded += '='.repeat(4 - (encoded.length % 4));
-//       }
-//       resolve(encoded);
-//     };
-//     reader.onerror = error => reject(error);
-//   });
-// }
-
 function uploadPhoto()
 {
    // var file_data = $("#file_path").prop("files")[0];
@@ -126,16 +109,6 @@ function uploadPhoto()
         console.log(this.responseText);
       }
     });
-
-
-//     var params = {"photokey" : file.name, "x-amz-meta-customLabels": document.getElementById('custom_labels'), "Content-Type" : file.type};
-//      var additionalParams = {
-//             headers: {
-//                 'Content-Type': file.type,
-//                 'X-Api-Key': "K9hmPwB1zf2WU9Cls8cxb1SzdNu4dStp3FV75sX7"
-// // });
-//             }
-//         };
 
     var param = '';
     let result = '';
